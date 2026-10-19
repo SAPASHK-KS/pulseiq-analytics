@@ -1,0 +1,25 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local environment and editor files
+.env
+.vscode/
+
+# Generated outputs
+data/clean/
+data/rejected/
+logs/
+
+# Local database
+05_Starter/pulseiq.duckdb
+
+# Local database and source data
+05_Starter/pulseiq.duckdb
+03_Data/
+05_Starter/demo_users.csv
+
+# Internal validation instructions
+docs/validation_vault_instructions.md
