@@ -1,0 +1,6 @@
+            fact_table             |        conname         | convalidated 
+-----------------------------------+------------------------+--------------
+ warehouse.fact_attendance_monthly | fk_attendance_employee | t
+ warehouse.fact_attrition_risk     | fk_attrition_employee  | t
+(2 rows)
+

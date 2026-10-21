@@ -1,0 +1,27 @@
+       table_name        | row_count 
+-------------------------+-----------
+ dim_account             |        47
+ dim_client              |        28
+ dim_date                |      2557
+ dim_department          |        11
+ dim_employee            |      1606
+ dim_leave_type          |         6
+ dim_location            |         9
+ dim_role                |        58
+ dim_sprint              |        38
+ dim_team                |        16
+ dim_vendor              |        30
+ fact_anomaly            |       405
+ fact_attendance_monthly |      7343
+ fact_attrition_risk     |       425
+ fact_expense            |       501
+ fact_forecast           |        72
+ fact_headcount_monthly  |       891
+ fact_invoice            |       743
+ fact_invoice_payment    |       709
+ fact_leave              |      3441
+ fact_ledger             |      6784
+ fact_payroll            |      7344
+ fact_task               |     28848
+(23 rows)
+

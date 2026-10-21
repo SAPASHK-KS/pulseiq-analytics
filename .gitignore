@@ -31,4 +31,4 @@ data/dim_team_source.csv
 data/dim_sprint_source.csv
 
 # Local screenshots and temporary evidence
-/evidence/
+/pulseiq.duckdb
