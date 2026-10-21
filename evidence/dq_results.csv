@@ -1,0 +1,15 @@
+check_id,check_name,status,violations,details
+DQ-C01,Payroll equals ledger,FAIL,5.0,Assumes ledger debit-positive amounts represent salary expense.
+DQ-C02,Ledger balanced,PASS,0.0,No violations found
+DQ-C03,Unique payroll rows,FAIL,2.0,2 violating row(s) found
+DQ-C04,No orphan employees,FAIL,2.0,2 violating row(s) found
+DQ-C05,No attendance after exit,FAIL,4.0,4 violating row(s) found
+DQ-C06,Unpaid leave deducted,FAIL,41.0,Only compares employee-months present in both feeds.
+DQ-C07,Invoice arithmetic,FAIL,1.0,1 violating row(s) found
+DQ-C08,Expense arithmetic,FAIL,1.0,1 violating row(s) found
+DQ-C09,Task dates sensible,FAIL,20.0,20 violating row(s) found
+DQ-C10,Leave dates sensible,FAIL,2.0,2 violating row(s) found
+DQ-C11,AI feeds are fresh,FAIL,5.0,5 stale prediction(s); scoring freshness cannot be verified because the feed has no scored_at or batch timestamp.
+DQ-C12,Dimension history does not overlap,FAIL,1.0,1 violating row(s) found
+DQ-C13,Pipeline freshness,BLOCKED,,No etl_run_log found; successful load time cannot be verified.
+DQ-C14,Minimum group size,BLOCKED,,Requires query-time enforcement in all governed metric views using raw.metric_dictionary.minimum_group_size.

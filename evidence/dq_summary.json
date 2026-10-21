@@ -1,0 +1,106 @@
+{
+  "total_checks": 14,
+  "passed": 1,
+  "failed": 11,
+  "blocked": 2,
+  "results": [
+    {
+      "check_id": "DQ-C01",
+      "check_name": "Payroll equals ledger",
+      "status": "FAIL",
+      "violations": 5,
+      "details": "Assumes ledger debit-positive amounts represent salary expense."
+    },
+    {
+      "check_id": "DQ-C02",
+      "check_name": "Ledger balanced",
+      "status": "PASS",
+      "violations": 0,
+      "details": "No violations found"
+    },
+    {
+      "check_id": "DQ-C03",
+      "check_name": "Unique payroll rows",
+      "status": "FAIL",
+      "violations": 2,
+      "details": "2 violating row(s) found"
+    },
+    {
+      "check_id": "DQ-C04",
+      "check_name": "No orphan employees",
+      "status": "FAIL",
+      "violations": 2,
+      "details": "2 violating row(s) found"
+    },
+    {
+      "check_id": "DQ-C05",
+      "check_name": "No attendance after exit",
+      "status": "FAIL",
+      "violations": 4,
+      "details": "4 violating row(s) found"
+    },
+    {
+      "check_id": "DQ-C06",
+      "check_name": "Unpaid leave deducted",
+      "status": "FAIL",
+      "violations": 41,
+      "details": "Only compares employee-months present in both feeds."
+    },
+    {
+      "check_id": "DQ-C07",
+      "check_name": "Invoice arithmetic",
+      "status": "FAIL",
+      "violations": 1,
+      "details": "1 violating row(s) found"
+    },
+    {
+      "check_id": "DQ-C08",
+      "check_name": "Expense arithmetic",
+      "status": "FAIL",
+      "violations": 1,
+      "details": "1 violating row(s) found"
+    },
+    {
+      "check_id": "DQ-C09",
+      "check_name": "Task dates sensible",
+      "status": "FAIL",
+      "violations": 20,
+      "details": "20 violating row(s) found"
+    },
+    {
+      "check_id": "DQ-C10",
+      "check_name": "Leave dates sensible",
+      "status": "FAIL",
+      "violations": 2,
+      "details": "2 violating row(s) found"
+    },
+    {
+      "check_id": "DQ-C11",
+      "check_name": "AI feeds are fresh",
+      "status": "FAIL",
+      "violations": 5,
+      "details": "5 stale prediction(s); scoring freshness cannot be verified because the feed has no scored_at or batch timestamp."
+    },
+    {
+      "check_id": "DQ-C12",
+      "check_name": "Dimension history does not overlap",
+      "status": "FAIL",
+      "violations": 1,
+      "details": "1 violating row(s) found"
+    },
+    {
+      "check_id": "DQ-C13",
+      "check_name": "Pipeline freshness",
+      "status": "BLOCKED",
+      "violations": null,
+      "details": "No etl_run_log found; successful load time cannot be verified."
+    },
+    {
+      "check_id": "DQ-C14",
+      "check_name": "Minimum group size",
+      "status": "BLOCKED",
+      "violations": null,
+      "details": "Requires query-time enforcement in all governed metric views using raw.metric_dictionary.minimum_group_size."
+    }
+  ]
+}
